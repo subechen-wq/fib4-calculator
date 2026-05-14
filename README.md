@@ -11,18 +11,18 @@
 * **視覺化風險分級**：自動對應 **F0 - F4** 分級，並以顏色強化警示。
 * [cite_start]**結合健保給付B肝用藥規範**：整合 **114.06.01 生效之 B型肝炎藥品給付規定** 。
 
+## 🛠️技術棧 (Tech Stack)
+* Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
+* Deployment: GitHub Pages
+* Integration: LINE Front-end Framework (LIFF)
+
+## ⚖️免責聲明 
+本工具僅供醫療專業人員參考，計算結果不可取代醫師之專業臨床判斷。
+
 ## 🩺 臨床邏輯與法規依據
 * **114.06.01健保給付門檻提醒** 
 符合 F3條件: HBeAg(+) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL。。  
 符合 F2條件: HBeAg(-) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL 。
-
-## 🛠️技術棧 (Tech Stack)
-Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
-Deployment: GitHub Pages
-Integration: LINE Front-end Framework (LIFF)
-
-## ⚖️免責聲明 
-本工具僅供醫療專業人員參考，計算結果不可取代醫師之專業臨床判斷。
 
 ### 1. FIB-4 計算公式
 ```text

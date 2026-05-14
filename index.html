@@ -129,9 +129,9 @@ function calculate() {
 
     // 114.06.01 健保提醒邏輯 
     if (score >= 3.25) {
-        nhisText = "<b>📢 健保給付提醒 (F3)</b>符合 HBeAg(+) 患者給付門檻：ALT > X 且HBV DNA ≧ 20000 IU/mL(半年內兩次以上，間隔大於 3 個月)。";
+        nhisText = "<b>📢 健保給付提醒 (F3)</b>符合 HBeAg(+) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL。";
     } else if (score >= 2.1) {
-        nhisText = "<b>📢 健保給付提醒 (F2)</b>符合 HBeAg(-) 患者給付門檻：ALT > X 且HBV DNA ≧ 20000 IU/mL(半年內兩次以上，間隔大於 3 個月)。 ";
+        nhisText = "<b>📢 健保給付提醒 (F2)</b>符合 HBeAg(-) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL。 ";
     }
 
     badge.innerText = grade;

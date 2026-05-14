@@ -12,6 +12,17 @@
 * [cite_start]**結合健保給付B肝用藥規範**：整合 **114.06.01 生效之 B型肝炎藥品給付規定** 。
 
 ## 🩺 臨床邏輯與法規依據
+* **114.06.01健保給付門檻提醒** 
+符合 F3條件: HBeAg(+) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL。。  
+符合 F2條件: HBeAg(-) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL 。
+
+* **🛠️技術棧 (Tech Stack)**
+Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
+Deployment: GitHub Pages
+Integration: LINE Front-end Framework (LIFF)
+
+* **⚖️免責聲明**  
+本工具僅供醫療專業人員參考，計算結果不可取代醫師之專業臨床判斷。
 
 ### 1. FIB-4 計算公式
 ```text
@@ -20,18 +31,6 @@ FIB-4 = (Age × AST) / (Platelet × √ALT)
 肝纖維化分級切點 (Fibrosis Stage)
 F4 ：≧ 6.5
 F3 ：≧ 3.25   
-F2 ：≧ 2.1   
+F2 ：≧ 2.1  
 F1 ：≧ 1.3
 F0 ：< 1.3
-
-114.06.01 健保給付門檻提醒   
-符合 F3 條件：FIB-4 ≧ 3.25。適用於 HBeAg(+) 患者，ALT ≧ 正常值上限且半年內有兩次以上紀錄（間隔 ≧ 3 個月）。  
-符合 F2 條件：FIB-4 ≧ 2.1。適用於 HBeAg(-) 患者，需配合 HBV DNA ≧ 2000 IU/mL 且 ALT 符合規範者 。
-
-🛠️ 技術棧 (Tech Stack)
-Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
-Deployment: GitHub Pages
-Integration: LINE Front-end Framework (LIFF)
-
-⚖️ 免責聲明
-本工具僅供醫療專業人員參考，計算結果不可取代醫師之專業臨床判斷。

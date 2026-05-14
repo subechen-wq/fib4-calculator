@@ -16,12 +16,12 @@
 符合 F3條件: HBeAg(+) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL。。  
 符合 F2條件: HBeAg(-) 患者給付門檻：ALT > X (半年內兩次以上，間隔大於 3 個月)且HBV DNA ≧ 20000 IU/mL 。
 
-* **🛠️技術棧 (Tech Stack)**
+## 🛠️技術棧 (Tech Stack)
 Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
 Deployment: GitHub Pages
 Integration: LINE Front-end Framework (LIFF)
 
-* **⚖️免責聲明**  
+## ⚖️免責聲明 
 本工具僅供醫療專業人員參考，計算結果不可取代醫師之專業臨床判斷。
 
 ### 1. FIB-4 計算公式
@@ -34,3 +34,4 @@ F3 ：≧ 3.25
 F2 ：≧ 2.1  
 F1 ：≧ 1.3
 F0 ：< 1.3
+

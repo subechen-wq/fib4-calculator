@@ -54,9 +54,14 @@
 
     <div class="card">
         <div class="input-group">
-            <label>年齡 (Age)</label>
-            <input type="number" id="age" inputmode="numeric" placeholder="請輸入年齡" oninput="calculate()">
-        </div>
+    <label>民國出生年 (預估年齡用)</label>
+    <input type="number" id="birthYear" inputmode="numeric" placeholder="例如: 75" oninput="convertAge()">
+</div>
+
+<div class="input-group">
+    <label>年齡 (Age) <span style="font-weight:normal; color:#888;">(自動計算中)</span></label>
+    <input type="number" id="age" inputmode="numeric" placeholder="請輸入年齡" oninput="calculate()">
+</div>
         <div class="input-group">
             <label>AST (U/L)</label>
             <input type="number" id="ast" inputmode="numeric" placeholder="AST (GOT) 數值" oninput="calculate()">
@@ -82,6 +87,27 @@
 </div>
 
 <script>
+function convertAge() {
+    const birthYear = parseFloat(document.getElementById('birthYear').value);
+    const ageInput = document.getElementById('age');
+    
+    // 取得當前西元年 (例如 2026)
+    const currentYear = new Date().getFullYear();
+    
+    if (!isNaN(birthYear) && birthYear > 0) {
+        // 民國年轉西元年 = 民國年 + 1911
+        // 年齡 = 當前西元 - (民國年 + 1911)
+        const calculatedAge = currentYear - (birthYear + 1911);
+        
+        if (calculatedAge >= 0) {
+            ageInput.value = calculatedAge;
+            // 換算完後，主動觸發原本的計算函數
+            calculate(); 
+        }
+    } else {
+        ageInput.value = "";
+    }
+}    
 function calculate() {
     const age = parseFloat(document.getElementById('age').value);
     const ast = parseFloat(document.getElementById('ast').value);
